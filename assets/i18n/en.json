@@ -1,0 +1,55 @@
+{   "dir":"ltr",
+  "theme":{
+    "colorSwitch":"color Swither",
+    "selectLanguage":"select Language"
+  },
+  "login":
+  {
+    "login":"Log In",
+
+     "email":"Email Address:",
+     "password":"Password:",
+     "imageText":"Welcome back!",
+     "imagepara":"We are glad to see you again! Get access to your Account,Wish you to do the Best.",
+     "emailreq":"Email is required**",
+     "emailvalid" :"Enter valid Email**",
+     "passwordreq":"Password is required**",
+     "getAccount":"Don't Have An Account ",
+     "createAccount":"SignUp"
+  },
+  "register":{
+    "signUp":"Sign Up",
+    "username":"User Name",
+     "email":"Email Address:",
+     "password":"Password:",
+     "confirmPassword":"ConfirmPassword",
+     "imageText":"Looks like you're new here!",
+     "imagepara":"Join our group in few minutes! Sign up with your account to get started.",
+     "userreq":"user name is required**",
+     "emailreq":"Email is required**",
+     "emailvalid" :"Enter valid Email**",
+     "passwordreq":"Password is required**",
+     "confirmReq":" confirm Password is required**",
+     "confirmMath":"must match password",
+     "getAccount":"Already Have An Account ?",
+     "createAccount":"Login"
+  },
+  "tasks":{
+    "description":"Description:",
+    "details":"Details",
+    "complete":"Complete"
+  },
+  "buttons":{
+    "login":"Login"
+
+  },
+  "navbar":{
+    "tasks":"tasks",
+    "listtasks":"ListTasks",
+    "logout":"Logout"
+  },
+  "general":
+  {
+    "loading":"loading"
+  }
+}
