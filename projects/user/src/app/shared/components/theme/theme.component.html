@@ -1,0 +1,42 @@
+
+<!-- -------------- theme --------->
+<div class="icon d-flex justify-content-center align-items-center">
+  <i class="fa-solid fa-gear fa-spin" (click)="selectColor()"></i>
+</div>
+  <div class="theme-options" *ngIf="select">
+    <div class="translate">
+      <p class="p-3 pb-0">{{'theme.selectLanguage' | translate}}</p>
+      <button class="btn btn-primary ms-3" (click)="changeLanguage($event)">
+        {{lang=='en'?'en':"ar"}}
+      </button>
+    </div>
+    <hr>
+    <p class="ps-3 pt-2">{{'theme.colorSwitch' | translate}}</p>
+
+    <div class="d-flex ps-3 pb-2">
+      <div id="theme-bule" class="colorbox"
+        [ngClass]="(storedTheme==='theme-bule')? 'active': '' "
+        (click)="setTheme('theme-blue')">
+      </div>
+      <div id="theme-green" class="colorbox"
+        [ngClass]="(storedTheme==='theme-green')? 'active' :'' "
+        (click)="setTheme('theme-green')">
+      </div>
+      <div id="theme-red" class="colorbox"
+        [ngClass]="(storedTheme==='theme-red') ?'active' :'' "
+        (click)="setTheme('theme-red')">
+      </div>
+      <div id="theme-purple" class="colorbox"
+        [ngClass]="(storedTheme==='theme-purple')?'active' :'' "
+        (click)="setTheme('theme-purple')">
+      </div>
+      <div id="theme-orange" class="colorbox"
+        [ngClass]="(storedTheme==='theme-orange')?'active' :'' "
+        (click)="setTheme('theme-orange')">
+      </div>
+    </div>
+</div>
+
+
+
+<!---------------- theme ------------- -->

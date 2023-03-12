@@ -1,0 +1,68 @@
+<div class="box d-flex content-theme {{storedTheme}}">
+  <div class="image-section w-50">
+    <div class="layer d-flex flex-column justify-content-center px-5 text-white ">
+      <h2>{{'register.imageText'| translate}}</h2>
+      <p>{{'register.imagepara'|translate}}
+      </p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="d-flex justify-content-between position-relative">
+      <h1>{{'register.signUp'|translate}}</h1>
+    </div>
+    <form  [formGroup]="registerForm" (ngSubmit)="register()">
+      <label> {{'register.username'|translate}}</label>
+      <mat-form-field class="w-100" appearance="outline">
+        <input matInput required formControlName="username" />
+        <mat-error *ngIf="username?.errors?.['required']">{{'register.userreq'| translate}} </mat-error>
+
+      </mat-form-field>
+      <!------------ Email ------------->
+      <label>{{'register.email'|translate}}</label>
+      <mat-form-field class="w-100 " appearance="outline">
+        <input matInput required  formControlName="email"/>
+        <mat-error *ngIf="email?.errors?.['required']">  {{'register.emailreq'| translate}} </mat-error>
+        <mat-error *ngIf="email?.errors?.['email']">{{'register.emailvalid'|translate}}</mat-error>
+      </mat-form-field>
+      <!------------ password ------------->
+      <label>{{'register.password'|translate}}</label>
+      <mat-form-field class="w-100" appearance="outline">
+        <input matInput  formControlName="password"[type]="hide ? 'password' : 'text'"/>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+         </button>
+         <mat-error *ngIf="password?.errors?.['required']"> {{'register.passwordreq'|translate}}</mat-error>
+      </mat-form-field>
+       <!------------ password ------------->
+      <label>{{'register.confirmPassword'|translate}}</label>
+      <mat-form-field class="w-100" appearance="outline">
+      <input matInput formControlName="confirmPassword" [type]="hide ? 'password' : 'text'"/>
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide">
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+        <mat-error *ngIf="confirmPassword?.errors?.['required']"> {{'register.confirmReq'|translate}} </mat-error>
+        <mat-hint *ngIf="registerForm.hasError('notmatch')"> {{'register.confirmMath'|translate}}</mat-hint>
+      </mat-form-field>
+      <div class="w-100 mt-2 mb-2">
+        <button  class="w-100 py-1" mat-raised-button type="submit"
+         [disabled]="registerForm.invalid" [ngClass]="{'validStyle' : registerForm.valid}">signup</button>
+      </div>
+    </form>
+    <div class="text-center register">
+      <p>{{'register.getAccount'|translate}} <a routerLink="/auth/">{{'register.createAccount'|translate}}</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,55 @@
+{
+  "dir":"rtl",
+  "theme":{
+    "colorSwitch":"اختيار اللون",
+    "selectLanguage":"اختيار اللغة"
+  },
+  "login":{
+    "login":"تسجيل دخول",
+    "email":"البريد الالكنرونى",
+    "password":"الباسورد",
+    "imageText":"مرحبا بعودتك مره اخرى",
+    "imagepara":"نحن سعداء لرؤتيك ويمكنك الدخول الى الاكونت الخاص بك,نتمنى لك اداء افضل ",
+    "emailreq":"يجب ادخال الايميل**",
+     "emailvalid" :"ادخل ايميل بشكل صحيح**",
+     "passwordreq":"يجب ادخال الباسورد**",
+     "getAccount":"ليس لدى حساب ؟  ",
+     "createAccount":"انشاء حساب"
+  },
+  "register":{
+    "signUp":"انشاء حساب",
+    "username":"اسم المستخدم",
+     "email":"البريد الالكنرونى",
+     "password":"الباسورد",
+     "confirmPassword":"تاكيد الباسورد",
+     "imageText":"انظر انت هنا الان مرحبا بك ",
+     "imagepara":"انضم الينا فى خلال دقائق ,سجل حساب جديد لكى تبدأ معنا ",
+     "userreq":"اسم المستخدم مطلوب**",
+     "emailreq":"البريد الاكترونى مطلوب**",
+     "emailvalid" :"ادخال ايميل بشكل صحيح**",
+     "passwordreq":"الباسورد مطلوب**",
+     "confirmReq":" تاكيد الباسورد**",
+     "confirmMath":"يجب مطابقه الباسورد",
+     "getAccount":"امتلك حساب بالفعل ؟",
+     "createAccount":"دخول"
+  },
+  "tasks":{
+    "description":"وصف المهام:",
+    "details":"تفاصيل المهمه",
+    "complete":"انهاء المهمه"
+
+  },
+  "buttons":{
+    "login":"دخول"
+
+  },
+  "navbar":{
+    "tasks":"المهام",
+    "listtasks":"جميع المهام",
+    "logout":"خروج"
+  },
+  "general":
+  {
+    "loading":"تحميل"
+  }
+}

@@ -1,0 +1,13 @@
+<div [dir]="'dir' | translate">
+  <router-outlet></router-outlet>
+</div>
+<div class="theme">
+  <app-theme 
+         (selectedColor)="selectThemeColor($event)"
+         (selectedlang)="selectlanguage($event)">
+  </app-theme>
+</div>
+
+<ngx-spinner bdColor = "rgba(0,0,0,.8)" size ="medium" color = "#dc3545" type = "square-jelly-box" [fullScreen] = "true"><p style="color: white" >{{'general.loading' | translate}} </p></ngx-spinner>
+
+
